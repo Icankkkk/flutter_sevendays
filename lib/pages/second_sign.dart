@@ -69,25 +69,23 @@ class SecondSign extends StatelessWidget {
             ),
             const SizedBox(height: 70),
             Center(
-              child: Container(
-                child: SizedBox(
-                  width: 340,
-                  height: 55,
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: const Color(0xff5468FF),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(60),
-                      ),
+              child: SizedBox(
+                width: 340,
+                height: 55,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: const Color(0xff5468FF),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(60),
                     ),
-                    onPressed: () {},
-                    child: Text(
-                      'Log In',
-                      style: GoogleFonts.openSans(
-                        color: const Color(0xffF8F8F8),
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                      ),
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    'Log In',
+                    style: GoogleFonts.openSans(
+                      color: const Color(0xffF8F8F8),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),

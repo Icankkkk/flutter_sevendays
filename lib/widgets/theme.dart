@@ -35,3 +35,50 @@ TextStyle desTextStyle = GoogleFonts.poppins(
   fontSize: 16,
   fontWeight: FontWeight.w300,
 );
+
+// Rating v1
+TextStyle foodTitleTextStyle = GoogleFonts.poppins(
+  color: white,
+  fontSize: 24,
+  fontWeight: FontWeight.w600,
+);
+
+TextStyle priceTextStyle = GoogleFonts.poppins(
+  color: white,
+  fontSize: 20,
+);
+
+TextStyle questionTextStyle = GoogleFonts.poppins(
+  color: white,
+  fontSize: 18,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle rateTextStyle = GoogleFonts.poppins(
+  color: white,
+  fontSize: 16,
+  fontWeight: FontWeight.w600,
+);
+
+// Rating v2
+TextStyle enjoyTextStyle = GoogleFonts.poppins(
+  color: const Color(0xff121622),
+  fontSize: 20,
+  fontWeight: FontWeight.w600,
+);
+
+TextStyle pleaseTextStyle = GoogleFonts.poppins(
+  color: const Color(0xff808EAB),
+  fontSize: 16,
+);
+
+TextStyle messageTextStyle = GoogleFonts.poppins(
+  color: const Color(0xff808EAB),
+  fontSize: 14,
+);
+
+TextStyle buttonSubmitTextStyle = GoogleFonts.poppins(
+  color: white,
+  fontSize: 16,
+  fontWeight: FontWeight.w600,
+);
