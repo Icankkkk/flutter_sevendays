@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sevendays/widgets/cart_list.dart';
 
 class FirstRandom extends StatelessWidget {
   const FirstRandom({Key? key}) : super(key: key);
@@ -22,46 +23,24 @@ class FirstRandom extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
-            Container(
-              width: 315,
-              height: 140,
-              decoration: BoxDecoration(
-                color: const Color(0xffFFFFFF),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Row(
-                children: [
-                  Column(
-                    children: [
-                      Image.asset(
-                        'assets/burger_icon.png',
-                        width: 80,
-                      ),
-                      Row(
-                        children: [
-                          Image.asset(
-                            'assets/mines_icon.png',
-                            width: 22,
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            '2',
-                            style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          const SizedBox(width: 8),
-                          Image.asset(
-                            'assets/plus_icon.png',
-                            width: 22,
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+            CartList(
+              imageUrl: 'assets/burger_icon.png',
+              iconOne: 'assets/mines_icon.png',
+              amount: '2',
+              iconTwo: 'assets/plus_icon.png',
+              pricing: "\$60.00",
+              foodName: "Burger Malleta",
+              place: "McTheone",
+            ),
+            const SizedBox(height: 26),
+            CartList(
+              imageUrl: 'assets/mojito_icon.png',
+              iconOne: 'assets/mines_icon.png',
+              amount: '5',
+              iconTwo: 'assets/plus_icon.png',
+              pricing: "\$510.00",
+              foodName: "Burger Malleta",
+              place: "McTheone",
             ),
           ],
         ),
