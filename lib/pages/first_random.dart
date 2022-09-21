@@ -39,8 +39,8 @@ class FirstRandom extends StatelessWidget {
               amount: '5',
               iconTwo: 'assets/plus_icon.png',
               pricing: "\$510.00",
-              foodName: "Burger Malleta",
-              place: "McTheone",
+              foodName: "Mojito Orange",
+              place: "The Bar",
             ),
             const SizedBox(height: 20),
             SecondCartList(

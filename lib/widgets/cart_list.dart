@@ -34,9 +34,8 @@ class CartList extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       child: Padding(
-        padding: const EdgeInsets.only(top: 10.0, left: 10.0),
+        padding: const EdgeInsets.only(top: 13.5, left: 16.0),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               children: [
