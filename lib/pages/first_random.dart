@@ -8,7 +8,7 @@ class FirstRandom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffFAFAFA),
+      backgroundColor: const Color.fromARGB(255, 240, 240, 240),
       body: Padding(
         padding: const EdgeInsets.only(top: 60.0, left: 30.0, right: 30.0),
         child: Column(
@@ -22,7 +22,7 @@ class FirstRandom extends StatelessWidget {
                     fontWeight: FontWeight.w600),
               ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 25),
             CartList(
               imageUrl: 'assets/burger_icon.png',
               iconOne: 'assets/mines_icon.png',
@@ -32,7 +32,7 @@ class FirstRandom extends StatelessWidget {
               foodName: "Burger Malleta",
               place: "McTheone",
             ),
-            const SizedBox(height: 26),
+            const SizedBox(height: 20),
             CartList(
               imageUrl: 'assets/mojito_icon.png',
               iconOne: 'assets/mines_icon.png',
@@ -41,6 +41,61 @@ class FirstRandom extends StatelessWidget {
               pricing: "\$510.00",
               foodName: "Burger Malleta",
               place: "McTheone",
+            ),
+            const SizedBox(height: 20),
+            SecondCartList(
+              header: "Informations",
+              subTotal: "Sub total",
+              delivery: "Delivery",
+              total: "Total",
+              pricingSubTotal: "\$600.00",
+              pricingDelivery: "\$80.00",
+              pricingTotal: "\$680.00",
+            ),
+            const SizedBox(height: 45),
+            // Checkout container
+            SizedBox(
+              width: 327,
+              height: 60,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: const Color(0xffFFC532),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(53),
+                  ),
+                ),
+                onPressed: () {},
+                child: Text(
+                  "Checkout Now",
+                  style: GoogleFonts.poppins(
+                    color: const Color(0xff2E221B),
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              width: 327,
+              height: 60,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: const Color(0xffD9D9D9),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(53),
+                  ),
+                ),
+                onPressed: () {},
+                child: Text(
+                  "Save to Wishlist",
+                  style: GoogleFonts.poppins(
+                    color: const Color(0xffFFFFFF),
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
             ),
           ],
         ),

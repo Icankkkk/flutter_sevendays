@@ -108,3 +108,115 @@ class CartList extends StatelessWidget {
     );
   }
 }
+
+// ignore: must_be_immutable
+class SecondCartList extends StatelessWidget {
+  String header;
+  String subTotal;
+  String delivery;
+  String total;
+  String pricingSubTotal;
+  String pricingDelivery;
+  String pricingTotal;
+
+  SecondCartList({
+    Key? key,
+    required this.header,
+    required this.subTotal,
+    required this.delivery,
+    required this.total,
+    required this.pricingSubTotal,
+    required this.pricingDelivery,
+    required this.pricingTotal,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 315,
+      height: 161,
+      decoration: BoxDecoration(
+        color: const Color(0xffFFFFFF),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 16, left: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  header,
+                  style: GoogleFonts.poppins(
+                    color: const Color(0xff191919),
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  subTotal,
+                  style: GoogleFonts.poppins(
+                    color: const Color(0xff191919),
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  delivery,
+                  style: GoogleFonts.poppins(
+                    color: const Color(0xff191919),
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  total,
+                  style: GoogleFonts.poppins(
+                    color: const Color(0xff191919),
+                    fontSize: 16,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 54, left: 105),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  pricingSubTotal,
+                  style: GoogleFonts.poppins(
+                    color: const Color(0xff191919),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  pricingDelivery,
+                  style: GoogleFonts.poppins(
+                    color: const Color(0xff191919),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  pricingTotal,
+                  style: GoogleFonts.poppins(
+                    color: const Color(0xff191919),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
