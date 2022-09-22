@@ -59,6 +59,8 @@ class FirstRandom extends StatelessWidget {
               height: 60,
               child: TextButton(
                 style: TextButton.styleFrom(
+                  shadowColor: const Color(0xffFFC532),
+                  elevation: 8,
                   backgroundColor: const Color(0xffFFC532),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(53),
