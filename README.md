@@ -1,6 +1,5 @@
-# sevendays
-
-A new Flutter project.
+# Mastering Modern UI Design With Flutter
+![](assets/slicing.png)
 
 ## Getting Started
 
